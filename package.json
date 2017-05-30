@@ -1,0 +1,25 @@
+{
+	"name":"our-ksp-openmct",
+	"version":"0.0.1",
+	"description":"Open MCT based MCT screen for KSP games",
+	"main":"node-server/server.js",
+	"scripts":{
+		"start":"node node-server/server.js",
+		"postinstall": "cd node_modules/openmct && npm install"
+	},
+	"repository": {
+		"type":"git",
+		"url":"git+https://github.com/uiuc-cs-ksp/our-ksp-openmct.git"
+	},
+	"author": "Bryan Lunt",
+	"license": "MIT",
+	"bugs": {
+		"url":"https://github.com/uiuc-cs-ksp/our-ksp-openmct/issues"
+	},
+	"homepage": "https://github.com/uiuc-cs-ksp/our-ksp-openmct#readme",
+	"dependencies": {
+		"express":"^4.14.1",
+		"ws": "^2.0.3",
+		"openmct":"nasa/openmct"
+	}
+}
